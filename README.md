@@ -8,7 +8,7 @@
 
 Official implementation of *"Improving and Evaluating Machine Learning Methods for Forensic Shoeprint Matching"*.
 
-Try it out at [SoleMate.streamlit.app](https://solemate.streamlit.app/)
+Try it out at [solematev2.streamlit.app](https://solematev2.streamlit.app/)
 
 <!-- 
 ### Deliverables
@@ -29,7 +29,7 @@ Before you begin, make sure you have the following software installed:
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/saatvikkher/SoleMate
+   git clone https://github.com/ssocolow/SoleMateV2.git
    ```
 2. Install required dependencies
    ```sh
@@ -43,8 +43,9 @@ Before you begin, make sure you have the following software installed:
 
 Create Soles
 ```python
-Q = Sole("path/to/image")
-K = Sole("path/to/image")
+# border_width=160 removes the border rulers from prints taken from the Everspry Outsole Scanner
+Q = Sole("path/to/image", border_width=160) 
+K = Sole("path/to/image", border_width=160)
 
 Q.plot()
 K.plot()
@@ -77,7 +78,7 @@ sc.pc_metrics() # Phase Correlation metrics
 ```
 
 
-*Developed and maintained by Simon Angoluan, Divij Jain, Saatvik Kher, Lena Liang, Yufeng Wu, and Ashley Zheng.*
+*Developed and maintained by Simon Angoluan, Divij Jain, Saatvik Kher, Lena Liang, Yufeng Wu, Ashley Zheng, Simon Socolow, and Myer Liebman.*
 
 *We conducted our research in collaboration with the [Center for Statistics and Applications in Forensic Evidence](https://forensicstats.org/).*
 
